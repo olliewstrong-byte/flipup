@@ -45,7 +45,7 @@ export const L17: Record<string, Lesson> = {
     why: 'Bet ¾ pot: their range is capped, with no Q-Q or better, no A-K, probably no A-Q, and no set, which would have raised by now. Their draws all missed, and the K♣ puts an overcard on their jacks; a tight player rarely calls a big third bet with second or third pair. Ace high can’t win at showdown, so bet.',
     streets: [
       { street: 'preflop', text: 'You open A♦3♦ from the small blind and a tight, aggressive big blind calls. Q-Q or better and A-K would 3-bet, so their best hands are gone already.', range: 'Pairs J-J and below, broadways below A-K, suited connectors and gappers, some suited aces.' },
-      { street: 'flop', text: 'On J♣4♦2♦ you c-bet 4 into 6 and they call. You have ace high, a wheel gutshot and a backdoor flush draw.', range: 'Jacks, small pairs, diamond draws, Q-T, T-9, Q-9, T-7 with backdoors.' },
+      { street: 'flop', text: 'On J♣4♦2♦ you c-bet 4 into 6 and they call. You have ace high, the nut flush draw and a wheel gutshot.', range: 'Jacks, small pairs, diamond draws, Q-T, T-9, Q-9, T-7 with backdoors.' },
       { street: 'turn', text: 'The 8♠. You bet 7 into 14 and they call. A set would have raised on a board this wet, so what calls twice is a jack, a smaller pair or a draw.', range: 'A jack, eights and small pairs, Q-T, T-9, Q-9, T-7, diamond draws.' },
       { street: 'river', text: 'The K♣ misses every draw and puts an overcard on their jacks. Kings are a small part of what called twice; K-J is the main one.', range: 'Small only: a jack. Fold: eights, fours, deuces, missed draws. Call: a king.' },
     ],

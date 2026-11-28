@@ -65,7 +65,7 @@ export const L11: Record<string, Lesson> = {
     why: 'Call: against a polarised bet you’re a pure bluff catcher, losing to all their value and beating all their bluffs, and they have enough missed Q-J, K-J and J-8 to make the call pay. Weak aces would check here, so the bet isn’t one-pair value. Raising only folds the bluffs you beat.',
     streets: [
       { street: 'preflop', text: 'A typical live player opens the button and you defend T♠8♠ from the big blind.', range: 'Suited hands, broadways, pairs and connectors.' },
-      { street: 'flop', text: 'On a paired 6♣6♠9♥ they c-bet 5 into 10.5 and you call with a gutshot and overcards. The button bets this board with most of its range.', range: 'Nines, overpairs, sixes, big cards.' },
+      { street: 'flop', text: 'On a paired 6♣6♠9♥ they c-bet 5 into 10.5 and you call with a gutshot and an overcard. The button bets this board with most of its range.', range: 'Nines, overpairs, sixes, big cards.' },
       { street: 'turn', text: 'The T♣ gives you two pair. They bet 12, with value and plenty of straight draws like Q-J and J-8; you call.', range: 'Tens, nines, sixes, overpairs, straight draws.' },
       { street: 'river', text: 'The A♦ and they bet 24 into 44.5. Weak aces would check and take a showdown, so the bet is strong aces and better, or a missed draw.', range: 'Value: A-K, A-Q, A-T, A-9, trips, straights, full houses. Bluffs: Q-J, K-Q, K-J, J-8, J-7, Q-8, 8-5, 7-5.' },
     ],

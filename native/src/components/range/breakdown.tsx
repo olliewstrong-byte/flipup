@@ -90,9 +90,14 @@ function Story({ scenario, best }: { scenario: Scenario; best: string }) {
         );
       })}
       <Step gold last>
-        <ThemedText variant="caption1" style={{ fontWeight: '800', letterSpacing: 0.8, textTransform: 'uppercase', color: colors.goldInk as string }}>
-          Your decision · {best}
-        </ThemedText>
+        <View accessible accessibilityLabel={`Your decision: ${best}`}>
+          <ThemedText variant="caption1" style={{ fontWeight: '800', letterSpacing: 0.8, textTransform: 'uppercase', color: colors.goldInk as string }}>
+            Your decision
+          </ThemedText>
+          <ThemedText variant="headline" style={[NUM, { color: colors.goldInk as string }]}>
+            {best}
+          </ThemedText>
+        </View>
         {reasoning ? <ThemedText variant="subhead">{reasoning}</ThemedText> : null}
         <View style={{ flexDirection: 'row', gap: spacing.xs, padding: spacing.sm, borderRadius: radius.md, borderCurve: 'continuous', backgroundColor: colors.goldBg as string }}>
           <View style={{ marginTop: 2 }}>

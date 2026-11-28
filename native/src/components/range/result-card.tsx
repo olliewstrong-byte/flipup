@@ -79,6 +79,9 @@ export function ResultCard({
         borderRadius: radius.lg,
         borderCurve: 'continuous',
         backgroundColor: dark ? (colors.cell as string) : (colors.background as string),
+        // A rim in the verdict's colour lifts the card off the panels it slides over, which share its grey.
+        borderWidth: 1,
+        borderColor: tone.bg,
         boxShadow: shadows.card,
       }}
     >

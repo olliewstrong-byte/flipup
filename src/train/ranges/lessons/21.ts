@@ -22,12 +22,12 @@ export const L21: Record<string, Lesson> = {
     takeaway: 'Bluff only when better hands can fold: if only worse hands fold, check and take the showdown.',
   },
   'nines-eight-take-free-showdown': {
-    why: 'Check: after betting the flop and turn they checked the river, which leaves a king, a high pair, an ace that just paired, or a barrel that gave up. The made hands all call a bet, so value only gets called by better, and the only hands that fold are worse than your second pair already. Take the free showdown.',
+    why: 'Check: after betting the flop and turn they checked the river, which leaves a king, a high pair, an ace that just paired, or a barrel that gave up. The made hands all call a bet, so value only gets called by better, and the only hands that fold are worse than your pair of eights already. Take the free showdown.',
     streets: [
       { street: 'preflop', text: 'A tight-aggressive regular opens middle position and you call 9♠8♠ on the button.', range: 'Pairs, A-K to A-T, K-Q, K-J, suited broadways, some suited connectors.' },
       { street: 'flop', text: 'You flop second pair on K♠8♦3♥. They bet 4.5 into 7.5, most of their range on a king-high board, and you call.', range: 'Kings, Q-Q to 9-9, A-Q, A-J, broadways.' },
       { street: 'turn', text: 'The 4♠ gives you a flush draw. They bet 11 into 16.5 and you call: kings and high pairs keep going, and so do some ace-high barrels.', range: 'Kings, Q-Q to 9-9, A-Q, A-J and other barrels.' },
-      { street: 'river', text: 'The A♦ misses your flush and pairs their aces, and they check: kings and pairs keeping it small, aces wanting a showdown, barrels giving up.', range: 'Call a bet: kings, Q-Q to 9-9, aces that paired. Fold: barrels that gave up, which you beat.' },
+      { street: 'river', text: 'The A♦ misses your flush draw and pairs their aces, and they check: kings and pairs keeping it small, aces wanting a showdown, barrels giving up.', range: 'Call a bet: kings, Q-Q to 9-9, aces that paired. Fold: barrels that gave up, which you beat.' },
     ],
     takeaway: 'With a medium hand on the river, take the free showdown when better hands call and worse hands fold.',
   },
@@ -45,9 +45,9 @@ export const L21: Record<string, Lesson> = {
     why: 'Check: after a flop bet and two checks, hands without a jack won’t call a bet on a four-straight board, and hands with one might check-raise. A-J has the nuts, and K-J, Q-J, J-9 and J-8 only split. A bet gets called or raised only by hands that tie or beat you.',
     streets: [
       { street: 'preflop', text: 'In a big live game with a straddle, a strong, slightly aggressive pro opens the hijack, you call J♥T♥ on the button, and the straddle calls.', range: 'Pairs, A-K to A-T, broadways like K-Q, K-J and Q-J, suited connectors.' },
-      { street: 'flop', text: 'You flop top pair and an open-ender on T♣9♦4♥. The pro bets 9, you call, and the straddle folds.', range: 'Tens, nines, overpairs, sets, Q-J, K-J, J-8, A-K, A-Q.' },
-      { street: 'turn', text: 'The Q♦ and the pro checks; you check behind to keep the pot small. They check medium hands here and some straights to trap.', range: 'Two pairs, sets, overpairs, tens, nines, K-J, A-J, A-K, Q-J, J-9.' },
-      { street: 'river', text: 'The K♠ gives you a king-high straight and they check again. Any jack now has a straight, and A-J has the best one.', range: 'Raises: A-J. Splits, may raise: K-J, Q-J, J-9, J-8. Folds: two pairs, sets, tens, nines.' },
+      { street: 'flop', text: 'You flop top pair on T♣9♦4♥, with only backdoor draws. The pro bets 9, you call, and the straddle folds.', range: 'Tens, nines, overpairs, sets, Q-J, K-J, J-8, A-K, A-Q.' },
+      { street: 'turn', text: 'The Q♦ gives you an open-ended straight draw (a king or an eight), and the pro checks; you check behind to keep the pot small. They check medium hands here and some straights to trap.', range: 'Two pairs, sets, overpairs, tens, nines, K-J, A-J, A-K, Q-J, J-9.' },
+      { street: 'river', text: 'The K♠ completes your king-high straight and they check again. Any jack now has a straight, and A-J has the best one.', range: 'Raises: A-J. Splits, may raise: K-J, Q-J, J-9, J-8. Folds: two pairs, sets, tens, nines.' },
     ],
     takeaway: 'When a bet only gets called by hands that tie or beat you, check the second-nut straight.',
   },

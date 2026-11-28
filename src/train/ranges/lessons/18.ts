@@ -15,7 +15,7 @@ export const L18: Record<string, Lesson> = {
     why: 'Shove: a tight, disciplined player avoids risking their tournament with a medium hand, and their long think before calling the turn says medium. A-T and K-T call a shove, but weaker tens, second pair and underpairs fold to one, and the busted draws fold to anything. King high can’t win at showdown, so push them out.',
     streets: [
       { street: 'preflop', text: 'You open K♦J♦ from middle position with 90 big blinds and a tight player defends the big blind with 40. Their 3-betting hands, big pairs, A-K and A-Q, are out.', range: 'Medium and small pairs, broadways below A-Q, suited aces, suited connectors.' },
-      { street: 'flop', text: 'On T♥9♠3♠ you bet 2.25 into 6 with two overcards and an open-ender, and they call quickly.', range: 'Tens, nines, pairs like 8-8 and 7-7, spade draws, Q-J, J-8, 8-7, some sets.' },
+      { street: 'flop', text: 'On T♥9♠3♠ you bet 2.25 into 6 with two overcards and a gutshot (a queen), and they call quickly.', range: 'Tens, nines, pairs like 8-8 and 7-7, spade draws, Q-J, J-8, 8-7, some sets.' },
       { street: 'turn', text: 'The 4♣ misses you. You bet 6.25 into 10.5 and they call after a long think. A strong ten or a set calls easily or raises; a weaker ten or a nine is what tanks and calls.', range: 'Mostly weaker tens, nines and underpairs; spade and straight draws; a few A-T and K-T.' },
       { street: 'river', text: 'The 4♦ misses every draw and they check. With about 29 big blinds left, calling it off puts their tournament on the line.', range: 'Call a shove: A-T, K-T. Fold to a shove: weaker tens. Small only: second pair, underpairs. Fold: missed draws.' },
     ],
@@ -25,7 +25,7 @@ export const L18: Record<string, Lesson> = {
     why: 'Check: pressure only works on players who care about their tournament life, and a loose recreational player calls with any made hand. Their instant turn call says a pair or better that was never folding, while everything you beat already folds or loses. A bluff gets called by better.',
     streets: [
       { street: 'preflop', text: 'You open A♣5♣ from middle position and a loose recreational player defends the big blind very wide.', range: 'Any ace, broadways, suited hands, connectors, all pairs.' },
-      { street: 'flop', text: 'On 6♣3♣2♠ you have the nut flush draw and a wheel gutshot. You bet 3 into 6 and they call.', range: 'Sixes, threes, deuces, middle pairs, 5-4, club and straight draws, overcards.' },
+      { street: 'flop', text: 'On 6♣3♣2♠ you have the nut flush draw and a gutshot (a four). You bet 3 into 6 and they call.', range: 'Sixes, threes, deuces, middle pairs, 5-4, club and straight draws, overcards.' },
       { street: 'turn', text: 'The T♥ misses you. You bet 5.75 into 12 and they call instantly. A draw or overcards takes a moment; a made hand just calls.', range: 'Pairs or better: sixes, threes, deuces, tens, middle pairs, 5-4. A few draws.' },
       { street: 'river', text: 'The T♠ misses again and they check. Your ace high beats only their overcards and missed draws.', range: 'Call: any pair, 5-4. Fold: overcards and missed draws, which you beat already.' },
     ],
@@ -46,8 +46,8 @@ export const L18: Record<string, Lesson> = {
     streets: [
       { street: 'preflop', text: 'Deep in a major event you open A♦6♦ from early position with 100 big blinds; the button and the big blind call.', range: 'The big blind: very wide, pairs, suited hands, broadways, connectors.' },
       { street: 'flop', text: 'A♠8♠8♦ checks round. Checking top pair with a weak kicker keeps a three-way pot small and lets eights and draws bluff later.', range: 'Aces, slow eights, pairs, spade and straight draws, air.' },
-      { street: 'turn', text: 'The 5♦ and the big blind leads 5.33 into 9; you call and the button folds. A lead after checking the flop is often a hand that improved or a draw.', range: 'Trip eights, A-8, 5-5, A-5, aces, diamond draws, 7-6 and 6-4.' },
-      { street: 'river', text: 'The 4♣ makes 7-6 a straight and 4-4 a full house, and they bet 32.29 into 19.5. A lone ace would check or bet small; this size is trips or better, or a missed draw.', range: 'Value: trip eights, A-8, 5-5, 4-4, 7-6. Bluffs: missed diamond draws.' },
+      { street: 'turn', text: 'The 5♦ gives you the nut flush draw, and the big blind leads 5.33 into 9; you call and the button folds. A lead after checking the flop is often a hand that improved or a draw.', range: 'Trip eights, A-8, 5-5, A-5, aces, diamond draws, 7-6 and 6-4.' },
+      { street: 'river', text: 'The 4♣ misses your flush draw, makes 7-6 a straight and 4-4 a full house, and they bet 32.29 into 19.5. A lone ace would check or bet small; this size is trips or better, or a missed draw.', range: 'Value: trip eights, A-8, 5-5, 4-4, 7-6. Bluffs: missed diamond draws.' },
     ],
     takeaway: 'Against a polarised overbet, top pair with a weak kicker beats only the bluffs: fold when there aren’t enough of them.',
   },

@@ -5,7 +5,7 @@ export const L10: Record<string, Lesson> = {
     why: 'Check: a bet only gets called by overpairs, trips and straights, which beat you, and it folds the missed draws you might beat. Ace high has a little showdown value, and checking lets their busted draws bluff into you. A bluff can’t work against hands that never fold.',
     streets: [
       { street: 'preflop', text: 'You min-raise A♠3♠ from the cutoff with 33 big blinds, and the button calls.', range: 'Pairs, suited aces, broadways and suited connectors.' },
-      { street: 'flop', text: 'On 5♣4♣4♥ you c-bet with a backdoor draw and they raise; you call. Overpairs, trips and club draws all raise here.', range: 'Overpairs, trips, club draws, straight draws like 7-6 and 6-3.' },
+      { street: 'flop', text: 'On 5♣4♣4♥ you c-bet with a wheel gutshot (a deuce makes A-2-3-4-5) and they raise; you call. Overpairs, trips and club draws all raise here.', range: 'Overpairs, trips, club draws, straight draws like 7-6 and 6-3.' },
       { street: 'turn', text: 'The Q♦ checks through. Checking back after a flop raise usually means a made hand happy to show down, or a draw taking a free card.', range: 'Overpairs, trips, club and straight draws.' },
       { street: 'river', text: 'The 6♦ makes straights for 7-3, 8-7 and 3-2. Their made hands never fold; their missed draws would fold to a bet, and might bluff if you check.', range: 'Call any bet: overpairs, trips, full houses, straights. Fold: missed club draws, some of which beat you anyway.' },
     ],
@@ -25,7 +25,7 @@ export const L10: Record<string, Lesson> = {
     why: 'Check-raise: most of their small value bets are trip queens and two pair with a jack, and your straight beats them. Full houses are possible, but they’re a small part of what bets, and trips will call a raise. Just calling leaves their value on the table.',
     streets: [
       { street: 'preflop', text: 'Three-handed, an elite high roller opens the button to 2.2, and you defend K♣T♠ from the big blind.', range: 'The button: very wide.' },
-      { street: 'flop', text: 'J♠7♦9♥ checks through; you have a gutshot and an overcard. An elite player bets most strong hands on a board this connected, so their check is weaker hands.', range: 'Jacks, nines, sevens, draws and air; few strong hands.' },
+      { street: 'flop', text: 'J♠7♦9♥ checks through; you have a double gutshot (a queen or an eight) and an overcard. An elite player bets most strong hands on a board this connected, so their check is weaker hands.', range: 'Jacks, nines, sevens, draws and air; few strong hands.' },
       { street: 'turn', text: 'The Q♦ gives you a king-high straight. You lead 3.5 and they call.', range: 'Queens, jacks, two pairs, sets, T-8 (a lower straight), draws.' },
       { street: 'river', text: 'The Q♠ pairs the board. You check and they bet small. An elite player bets small with lots of medium-strong hands on a paired river, plus a few full houses.', range: 'Behind you: trip queens, two pair with a jack, T-8. Ahead of you: full houses.' },
     ],
@@ -47,7 +47,7 @@ export const L10: Record<string, Lesson> = {
       { street: 'preflop', text: 'A tight player opens under the gun, you just call with A♦A♥, and three more call. Calling with aces keeps the pot big but means facing many hands.', range: 'Wide across the field: pairs, suited hands and broadways.' },
       { street: 'flop', text: 'On 7♠4♣4♠ you check, the player behind bets, the button calls and you call. Betting into four players shows a real hand.', range: 'Sevens, fours, overpairs, spade and straight draws.' },
       { street: 'turn', text: 'The 4♥ puts trip fours out. They bet ⅔ pot and you call. Only a seven or a straight flush draw has any chance against a four now.', range: 'A four (quads), sevens (full houses), overpairs, some draws.' },
-      { street: 'river', text: 'The 7♣ gives you aces full and puts fours full on the board. You lead small to block, and they shove. A thinking pro raises a block bet all in only with a hand that beats every full house.', range: 'The last four, quad sevens, sevens full: all beat aces full.' },
+      { street: 'river', text: 'The 7♣ puts fours full of sevens on the board; you still have fours full of aces, which you’ve held since the turn. You lead small to block, and they shove. A thinking pro raises a block bet all in only with a hand that beats every full house.', range: 'The last four, quad sevens, sevens full: all beat aces full.' },
     ],
     takeaway: 'When the only hands that raise all beat you, fold even a full house.',
   },
