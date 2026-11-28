@@ -74,7 +74,7 @@ export const L22: Record<string, Lesson> = {
     why: 'Check: a strong online pro folds hands that can’t win against a bet and check-raises the ones that can. Their turn call ruled out a straight, so on the river sets, two pair, overpairs and 7-6 fold to a bet, and every flush draw they called with now beats your eight-high flush. Betting only gets paid by better.',
     streets: [
       { street: 'preflop', text: 'In an online six-handed game a strong pro opens under the gun and you call 8♦7♦ on the button.', range: 'Pairs, A-K to A-T, suited broadways like K♦Q♦, some 7-6.' },
-      { street: 'flop', text: 'On 6♦4♥2♦ you have a straight draw and a flush draw. They bet 5.5 into 8.5 and you call.', range: 'Overpairs, sets, A♦K♦ and other diamond draws, 7-6, A-K, A-Q.' },
+      { street: 'flop', text: 'On 6♦4♥2♦ you have a flush draw and a gutshot (a five). They bet 5.5 into 8.5 and you call.', range: 'Overpairs, sets, A♦K♦ and other diamond draws, 7-6, A-K, A-Q.' },
       { street: 'turn', text: 'The 5♠ makes your straight. They check, you bet 13.33 into 19.5, and they call. A straight would bet or check-raise, so they don’t have one.', range: 'Overpairs, sets, two pair, 7-6, A♦K♦ and K♦Q♦.' },
       { street: 'river', text: 'The A♦ completes your flush, and every flush draw they called with too. They check.', range: 'Raise a bet: bigger flushes. Fold: sets, two pair, overpairs, 7-6.' },
     ],

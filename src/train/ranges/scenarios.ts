@@ -268,7 +268,7 @@ const HANDS: Hand[] = [
         type: 'Regular',
         pre: '3-bet',
         range: [
-          { label: 'Overpairs and sets', hands: 'AA, KK, QQ, JJ, TT', role: 'value' },
+          { label: 'Pocket pairs and sets', hands: 'AA, KK, QQ, JJ, TT', role: 'value' },
           { label: 'Jacks: A-J, K-J', hands: 'AJs, KJs', role: 'value' },
           { label: 'A-4 and A-5: the wheel, and a pair of fives', hands: 'A4s, A5s', role: 'value' },
           { label: 'A-K: their main bluff', hands: 'AK', role: 'bluff' },
@@ -1129,7 +1129,7 @@ const HANDS: Hand[] = [
   },
   {
     id: 'middle-pair-thin-value',
-    title: 'Middle pair: a mandatory value bet',
+    title: 'A pair of sixes: a thin value bet',
     concept: 'Thin value',
     hero: { pos: 'CO', cards: ['Ac', '6c'], pre: 'CO open' },
     stack: 108,
@@ -1871,7 +1871,7 @@ const HANDS: Hand[] = [
       { street: 'preflop', text: 'The small blind calls your hijack open: pairs, suited aces, broadways and suited connectors.' },
       { street: 'flop', text: 'T♠9♦8♥: you c-bet top pair and they call: straights, two pair, pairs and lots of straight draws.' },
       { street: 'turn', text: 'The 6♥ completes many draws and they lead small. You have top pair and a flush draw: folding is out, and a raise could get re-raised. Call.' },
-      { street: 'river', text: 'The 2♣ misses your flush and they check. If you bet, two pair or better calls almost any size, and most one-pair hands fold.' },
+      { street: 'river', text: 'The 2♣ misses your flush draw and they check. If you bet, two pair or better calls almost any size, and most one-pair hands fold.' },
     ],
   },
   {
@@ -2418,7 +2418,7 @@ const HANDS: Hand[] = [
         type: 'Tight, passive regular',
         pre: 'Live iso-raise',
         range: [
-          { label: 'Overpairs: J-J, K-K, A-A', hands: 'JJ, KK, AA', role: 'value' },
+          { label: 'Big pairs: A-A, K-K, J-J', hands: 'JJ, KK, AA', role: 'value' },
           { label: 'Top pair: A-Q, K-Q', hands: 'AQs, AQo, KQs, KQo', role: 'value' },
           { label: 'Set of queens', hands: 'QQ', role: 'value' },
           { label: 'Smaller sets', hands: '66, 44', role: 'value' },
@@ -2966,7 +2966,7 @@ const HANDS: Hand[] = [
     best: 'call',
     clues: [
       { street: 'preflop', text: 'You open from early position and the button 3-bets. Their range is polar: big pairs and big aces, plus some lighter hands.' },
-      { street: 'flop', text: 'Q♥7♠5♦: they bet small and you call with a gutshot and two overcards.' },
+      { street: 'flop', text: 'Q♥7♠5♦: they bet small and you call with a gutshot.' },
       { street: 'turn', text: 'The 6♠ gives you a straight. Check is right; they bet three quarters of the pot and you call.' },
       { street: 'river', text: 'The 6♦ pairs the board and they shove about the size of the pot. Queens and sets just made full houses, but A-Q and the overpairs shove here too.' },
     ],
@@ -3900,8 +3900,8 @@ const HANDS: Hand[] = [
         type: 'Online player',
         pre: 'MTT cold call',
         range: [
-          { label: 'Overpairs', hands: '77, 88, 99, TT, JJ, KK, AA', role: 'calls' },
-          { label: 'Trips, full houses and straights', hands: 'A4s, 55, 66, 87s, A5s', role: 'calls' },
+          { label: 'Pocket pairs', hands: '77, 88, 99, TT, JJ, KK, AA', role: 'calls' },
+          { label: 'Trips, full houses, straights and two pair', hands: 'A4s, 55, 66, 87s, A5s', role: 'calls' },
           { label: 'Missed club draws with an ace or a queen: they beat you', hands: 'AcKc, AcQc, AcJc, AcTc, Ac9c, KcQc, QcJc, QcTc', role: 'folds' },
           { label: 'Missed club draws you beat', hands: 'KcJc, KcTc, JcTc, Tc9c, 9c8c', role: 'folds' },
         ],
@@ -3912,7 +3912,7 @@ const HANDS: Hand[] = [
     best: 'check',
     clues: [
       { street: 'preflop', text: 'You min-raise from the cutoff with 33bb and the button calls.' },
-      { street: 'flop', text: '5♣4♣4♥: you c-bet with a backdoor draw and they raise. Overpairs, trips and club draws all do that. You call.' },
+      { street: 'flop', text: '5♣4♣4♥: you c-bet with a wheel gutshot and they raise. Overpairs, trips and club draws all do that. You call.' },
       { street: 'turn', text: 'The Q♦ goes check, check.' },
       { street: 'river', text: 'The 6♦. Their overpairs, trips and straights never fold. Their missed draws would fold to a bet, and if you check they may bluff with them.' },
     ],
@@ -4016,7 +4016,7 @@ const HANDS: Hand[] = [
     best: 'raise',
     clues: [
       { street: 'preflop', text: 'Three-handed, the button opens and you defend your big blind.' },
-      { street: 'flop', text: 'J♠7♦9♥: check, check. You have a gutshot and an overcard.' },
+      { street: 'flop', text: 'J♠7♦9♥: check, check. You have a double gutshot and an overcard.' },
       { street: 'turn', text: 'The Q♦ gives you a king-high straight. You lead and they call.' },
       { street: 'river', text: 'The Q♠ pairs the board. You check and they bet small. That’s a queen or a jack for value, plus a few full houses.' },
     ],
@@ -4052,7 +4052,7 @@ const HANDS: Hand[] = [
         pre: 'MTT open MP',
         range: [
           { label: 'An ace', hands: 'AK, AQ, AJ, AT, A9s, A8s, A7s, A6s, A5s, A4s, A2s', role: 'calls' },
-          { label: 'Full houses: K-K, Q-Q', hands: 'KK, QQ', role: 'calls' },
+          { label: 'Queens full and kings: Q-Q, K-K', hands: 'KK, QQ', role: 'calls' },
           { label: 'Pairs', hands: 'JJ, TT, 99, 88, 77, 66, 55, 44', role: 'folds', small: 'calls' },
           { label: 'A queen', hands: 'KsQs, KdQd, KcQc, KQo, QsJs, QdJd, QcJc, QJo', role: 'folds', small: 'calls' },
           { label: 'Missed heart draws', hands: 'KhJh, KhTh, Kh9h, JhTh, Th9h, 9h8h, 8h7h, 7h6h', role: 'folds' },
@@ -4074,7 +4074,7 @@ const HANDS: Hand[] = [
   },
   {
     id: 'aces-full-fold-river-raise',
-    title: 'Aces full facing a river shove on a double-paired board',
+    title: 'Fours full of aces facing a river shove on a double-paired board',
     concept: 'Folding to strength',
     table: 9,
     format: 'tournament',
@@ -4126,7 +4126,7 @@ const HANDS: Hand[] = [
       { street: 'turn', text: 'The 4♥. They bet two thirds of the pot and you call. Their bet is strong; only a seven or a few straight flushes have any equity against a four.' },
       {
         street: 'river',
-        text: 'The 7♣ gives you aces full. You lead small to block, and they shove. They’d only shove a hand that beats aces full: the last four, or a seven.',
+        text: 'The 7♣ puts fours full of sevens on the board; you still have fours full of aces. You lead small to block, and they shove. They’d only shove a hand that beats yours: the last four, or a seven.',
       },
     ],
   },
@@ -4505,7 +4505,7 @@ const HANDS: Hand[] = [
     clues: [
       { street: 'preflop', text: 'You open the small blind, the big blind 3-bets and calls your big 4-bet. Calling a 4-bet that size takes a strong hand: big pairs, A-K, A-Q, K-Q.' },
       { street: 'flop', text: 'T♦8♠T♣: you bet small and they call. Big pairs and A-K are happy to call here.' },
-      { street: 'turn', text: 'The J♦ and both check. Your K-J is a pair of jacks with a king kicker, and they show no interest in building the pot.' },
+      { street: 'turn', text: 'The J♦ and both check. You have jacks and tens with a king kicker, and they show no interest in building the pot.' },
       {
         street: 'river',
         text: 'The T♥ gives you tens full of jacks. You bet and they move all in. Queens, kings, aces and jacks all make bigger full houses, and a regular rarely checks back the turn to bluff a river that fills so many full houses.',
@@ -4622,7 +4622,7 @@ const HANDS: Hand[] = [
         type: 'Typical live player',
         pre: 'BTN open',
         range: [
-          { label: 'Top pair and overpairs', hands: 'AT, KT, QT, JT, T9, T7s, T6s, 99, JJ, QQ, KK, AA', role: 'value' },
+          { label: 'Top pair and big pairs', hands: 'AT, KT, QT, JT, T9, T7s, T6s, 99, JJ, QQ, KK, AA', role: 'value' },
           { label: 'Sets, two pair and trips', hands: 'TT, 44, 88, T8, A3s, K3s, 63s, 53s, 43s, 33', role: 'value' },
           { label: 'Missed hands: 9-7, 7-6, 6-5, J-9, Q-9, K-Q, K-J', hands: '97s, 76, 65s, J9, Q9, KQ, KJ', role: 'bluff', weight: 0.5 },
           { label: 'Missed heart draws', hands: 'AhKh, AhQh, AhJh, Ah9h, Ah7h, Ah6h, Ah5h, Ah2h, Kh9h, Kh7h, Kh6h, Kh5h, Qh7h, Qh6h, Jh7h, 9h6h', role: 'bluff', weight: 0.5 },
@@ -4908,7 +4908,7 @@ const HANDS: Hand[] = [
   },
   {
     id: 'second-pair-check-river-out-of-position',
-    title: 'Second pair first to act on the river',
+    title: 'A pair of nines first to act on the river',
     concept: 'Betting only gets called by better',
     hero: { pos: 'BB', cards: ['Jd', '9d'], pre: 'BB vs late open' },
     stack: 200,
@@ -5205,7 +5205,7 @@ const HANDS: Hand[] = [
   },
   {
     id: 'second-pair-call-small-river-after-stab',
-    title: 'Second pair after they stab the turn and bet small again',
+    title: 'A pair of nines after they stab the turn and bet small again',
     concept: 'Bluff catching',
     hero: { pos: 'BTN', cards: ['Th', '9h'], pre: 'BTN open' },
     stack: 200,
@@ -5242,7 +5242,7 @@ const HANDS: Hand[] = [
   },
   {
     id: 'middle-pair-call-small-river-after-checked-turn',
-    title: 'Middle pair: c-bet, check the turn, catch the river',
+    title: 'A pair of fives: c-bet, check the turn, catch the river',
     concept: 'Bluff catching',
     hero: { pos: 'BTN', cards: ['Ks', '5s'], pre: 'BTN open' },
     stack: 200,
@@ -5778,7 +5778,7 @@ const HANDS: Hand[] = [
         pre: 'Cold call',
         range: [
           { label: 'Trips: A-4, 5-4', hands: 'Ac4c, As4s, 54s', role: 'value' },
-          { label: 'Full houses and sets: 7-7, 8-8, A-A', hands: '77, 88, AA', role: 'value' },
+          { label: 'Full houses and aces: 7-7, 8-8, A-A', hands: '77, 88, AA', role: 'value' },
           { label: 'A straight: 6-5 suited', hands: '65s', role: 'value' },
           { label: 'Backdoor diamond flushes', hands: 'QdJd, QdTd, JdTd, Jd9d, Td9d', role: 'value' },
         ],
@@ -6759,7 +6759,7 @@ const HANDS: Hand[] = [
     best: 'fold',
     clues: [
       { street: 'preflop', text: 'An elite player opens the lojack; you defend K♠8♠ from the big blind, both of you over 300bb deep.' },
-      { street: 'flop', text: '9♠7♠6♣: you check and call a two-thirds-pot bet with a flush draw and a gutshot.' },
+      { street: 'flop', text: '9♠7♠6♣: you check and call a two-thirds-pot bet with a flush draw and an open-ended straight draw.' },
       { street: 'turn', text: 'The K♥ gives you top pair. You check and call a big bet.' },
       {
         street: 'river',
@@ -6865,11 +6865,11 @@ const HANDS: Hand[] = [
     alsoOk: ['bet75'],
     clues: [
       { street: 'preflop', text: 'A strong player opens under the gun and you call K♦T♦ on the button.' },
-      { street: 'flop', text: 'Q♣J♦9♦: they check, you bet small with an open-ended straight and flush draw, and they call.' },
+      { street: 'flop', text: 'Q♣J♦9♦: you flop the nut straight with a flush draw; they check, you bet small, and they call.' },
       { street: 'turn', text: 'The 7♣: they check and call a pot-sized bet. This player wouldn’t call that with A-T.' },
       {
         street: 'river',
-        text: 'The K♠ gives you a king-high straight and they check. They are supposed to check-call hands like A♣K♣, A-A and K-Q a lot, and they call often enough with worse.',
+        text: 'The K♠ pairs your king; only A-T beats your straight now, and they check. They are supposed to check-call hands like A♣K♣, A-A and K-Q a lot, and they call often enough with worse.',
       },
     ],
   },
@@ -7604,7 +7604,7 @@ const HANDS: Hand[] = [
         type: 'Loud, aggressive player',
         pre: 'Light 3-bet',
         range: [
-          { label: 'Overpairs: A-A, K-K, J-J', hands: 'AA, KK, JJ', role: 'value' },
+          { label: 'Big pairs: A-A, K-K, J-J', hands: 'AA, KK, JJ', role: 'value' },
           { label: 'Quads: Q-Q, T-T', hands: 'QQ, TT', role: 'value' },
           { label: 'Nines, now counterfeited', hands: '99', role: 'bluff', weight: 0.5 },
         ],
@@ -8011,7 +8011,7 @@ const HANDS: Hand[] = [
         pre: 'CO open',
         range: [
           { label: 'An ace', hands: 'AQo, AJo, ATo, A9s, A8s, A6s, A3s, A2s, AQs, AJs, ATs', role: 'folds', small: 'calls' },
-          { label: 'Two pair: A-K, K-x that hit', hands: 'AKo, AhKh, AdKd, AcKc, KQs, KJs', role: 'calls' },
+          { label: 'Kings: A-K for two pair, K-Q, K-J', hands: 'AKo, AhKh, AdKd, AcKc, KQs, KJs', role: 'calls' },
           { label: 'A pair: sevens, fives, pocket pairs', hands: '87s, 76s, 65s, 88, 99, TT, JJ, QQ, 66, 33, 22', role: 'folds' },
           { label: 'Missed club draws', hands: 'QcJc, JcTc, Tc9c, 9c8c, Kc9c, Qc9c', role: 'folds' },
         ],
@@ -8022,7 +8022,7 @@ const HANDS: Hand[] = [
     clues: [
       { street: 'preflop', text: 'In a $5-$10 game, the player one off the button opens and you defend T♠9♠, 100bb deep.' },
       { street: 'flop', text: '7♣5♣4♦: it checks through. When they check here, you can be fairly sure they don’t have two pair or better.' },
-      { street: 'turn', text: 'The A♠: they bet small and you check-raise as a bluff with a backdoor spade draw; they call.' },
+      { street: 'turn', text: 'The A♠: they bet small and you check-raise as a pure bluff; they call.' },
       {
         street: 'river',
         text: 'The K♠ misses you; you have ten-high and act first. Their range will very rarely have anything stronger than one pair.',
@@ -8069,7 +8069,7 @@ const HANDS: Hand[] = [
     best: 'call',
     clues: [
       { street: 'preflop', text: 'Early in a SCOOP event a weak player new to the table limps; you complete A♥6♥ and the big blind checks.' },
-      { street: 'flop', text: '2♥3♣9♥: you bet your flush and wheel draws and only the limper calls.' },
+      { street: 'flop', text: '2♥3♣9♥: you bet your nut flush draw and only the limper calls.' },
       { street: 'turn', text: 'The 2♠: you check and call their bet.' },
       {
         street: 'river',
@@ -8878,7 +8878,7 @@ const HANDS: Hand[] = [
     clues: [
       { street: 'preflop', text: 'In a $5-$10 game at Bellagio everyone limps, you with 9♣6♣ on the button.' },
       { street: 'flop', text: '7♠6♠6♥: the big blind bets small, and an experienced pro in the cutoff and you call.' },
-      { street: 'turn', text: 'The 8♦ gives you trips and an open-ended draw. The big blind checks, which means they are almost certainly weak. The cutoff bets and you call.' },
+      { street: 'turn', text: 'The 8♦ adds an open-ended straight draw to your trip sixes. The big blind checks, which means they are almost certainly weak. The cutoff bets and you call.' },
       {
         street: 'river',
         text: 'The J♣ and the cutoff bets about half the pot. When the first bettor checks, the second bet could be made on anything: often a straight or flush draw, and some value bets are 8-7, A-7 or 6-5, which you beat.',
@@ -8928,7 +8928,7 @@ const HANDS: Hand[] = [
   },
   {
     id: 'nines-eight-take-free-showdown',
-    title: 'Middle pair: take the free showdown',
+    title: 'A pair of eights: take the free showdown',
     concept: 'Showdown value',
     table: 9,
     hero: { pos: 'BTN', cards: ['9s', '8s'], pre: 'Live cold call' },
@@ -9047,7 +9047,7 @@ const HANDS: Hand[] = [
     best: 'check',
     clues: [
       { street: 'preflop', text: 'A live $5-$10 game with a $20 straddle. A strong, slightly aggressive pro opens from the hijack, you call J♥T♥ on the button and the straddle calls.' },
-      { street: 'flop', text: 'T♣9♦4♥: they bet, you call with top pair and a straight draw, and the straddle folds.' },
+      { street: 'flop', text: 'T♣9♦4♥: they bet, you call with top pair, and the straddle folds.' },
       { street: 'turn', text: 'The Q♦ gives you an open-ended straight draw: a king or an eight makes it. They check, and you check behind.' },
       {
         street: 'river',
@@ -9688,7 +9688,7 @@ const HANDS: Hand[] = [
     best: 'bet125',
     clues: [
       { street: 'preflop', text: 'A big online tournament, 55bb deep. You open T♠9♠ early and a good pro calls in the cutoff.' },
-      { street: 'flop', text: '8♣7♦2♣: you bet your straight draw and they call.' },
+      { street: 'flop', text: '8♣7♦2♣: you bet your open-ended straight draw and they call.' },
       { street: 'turn', text: 'The Q♦: you bet again and they call. With a set, aces or kings they’d have raised by now; this is 9-9 to J-J or a club draw.' },
       {
         street: 'river',

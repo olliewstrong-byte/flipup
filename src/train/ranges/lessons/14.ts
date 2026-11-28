@@ -47,7 +47,7 @@ export const L14: Record<string, Lesson> = {
       { street: 'preflop', text: 'You open A♦K♥ from the cutoff and a very passive player calls on the button.', range: 'Pairs, suited hands, broadways and connectors.' },
       { street: 'flop', text: 'On 4♥4♦7♠ you bet 7 into 9.5 and they call with pairs, sevens, fours, draws and overcards.', range: 'Pairs, sevens, fours, draws.' },
       { street: 'turn', text: 'The 8♦ adds draws and it checks through. A passive player who checks has a pair, a draw, or a strong hand waiting to call.', range: 'Pairs, sevens, eights, fours, draws.' },
-      { street: 'river', text: 'The K♦ gives you top pair and completes a backdoor flush. You bet and they raise three times your bet. A very passive player almost never raises the river as a bluff.', range: 'A-4, 5-4, 7-7, 8-8, A-A, 6-5, backdoor diamond flushes.' },
+      { street: 'river', text: 'The K♦ gives you top pair, top kicker, and puts a third diamond out. You bet and they raise three times your bet. A very passive player almost never raises the river as a bluff.', range: 'A-4, 5-4, 7-7, 8-8, A-A, 6-5, backdoor diamond flushes.' },
     ],
     takeaway: 'A river raise from a player who almost never bluffs is strong: fold one pair.',
   },
@@ -94,7 +94,7 @@ export const L14: Record<string, Lesson> = {
     why: 'Call: marginal flushes would rather check, so this lead is strong or a bluff. The value is strong flushes and straights; the bluffs are hands like J-T and small pairs, and a good player bluffs more when the scary card comes. You beat all the bluffs and need only about 27%.',
     streets: [
       { street: 'preflop', text: 'You open Q♥J♥ from the cutoff; a good young player in the small blind and a tighter big blind call.', range: 'The small blind: pairs, suited broadways, suited aces, connectors.' },
-      { street: 'flop', text: 'K♣T♣4♣ checks round; you have a gutshot and no club. A monotone board slows everyone down, so every range stays wide.', range: 'Clubs, kings, tens, broadway draws, air.' },
+      { street: 'flop', text: 'K♣T♣4♣ checks round; you have an open-ended straight draw (an ace or a nine) and no club. A monotone board slows everyone down, so every range stays wide.', range: 'Clubs, kings, tens, broadway draws, air.' },
       { street: 'turn', text: 'The Q♠ gives you a pair and an open-ender. You bet small; the small blind calls and the big blind folds.', range: 'Clubs, kings, queens, tens, A-J and J-9, pairs.' },
       { street: 'river', text: 'The 6♣ puts four clubs out and the small blind leads a little over half the pot. Most players won’t lead a marginal flush here.', range: 'Value: strong flushes, A-J, J-9. Bluffs: J-T, T-9, small pairs, ace high with no club.' },
     ],

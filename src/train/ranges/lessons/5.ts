@@ -66,7 +66,7 @@ export const L5: Record<string, Lesson> = {
       { street: 'preflop', text: 'You open A♥T♥ from the hijack and the small blind calls, with exactly the kind of hands that love a middle board.', range: 'Pairs, suited aces, broadways and suited connectors.' },
       { street: 'flop', text: 'You flop top pair on T♠9♦8♥, as connected as boards get. You c-bet and they call.', range: 'Straights like Q-J and 7-6, two pairs, sets, tens and nines, straight draws.' },
       { street: 'turn', text: 'The 6♥ completes many draws and gives you a heart draw. They lead small. Top pair with a flush draw can’t fold, and a raise could be re-raised, so you call.', range: 'Straights, sets and two pair leading small, pairs blocking, draws.' },
-      { street: 'river', text: 'The 2♣ misses your flush and they check. Bet, and two pair or better calls almost any size while most one-pair hands fold.', range: 'Ahead: Q-J, 7-6, sets and two pair. Behind: tens and nines, missed K-Q and K-J.' },
+      { street: 'river', text: 'The 2♣ misses your flush draw and they check. Bet, and two pair or better calls almost any size while most one-pair hands fold.', range: 'Ahead: Q-J, 7-6, sets and two pair. Behind: tens and nines, missed K-Q and K-J.' },
     ],
     takeaway: 'When worse hands fold and better ones call, take the free showdown.',
   },

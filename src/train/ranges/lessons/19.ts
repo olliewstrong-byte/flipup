@@ -6,7 +6,7 @@ export const L19: Record<string, Lesson> = {
     streets: [
       { street: 'preflop', text: 'In a high-stakes event an elite player opens middle position, you 3-bet A♥A♣ on the button, 222 big blinds deep, and they call. Deep stacks invite calls with hands that flop well.', range: 'Pairs, suited broadways, suited aces like A-5, suited connectors like 6-5 and 7-6.' },
       { street: 'flop', text: 'On a dry 9♦4♣2♥ they check, you bet 15 into 22.5, and they call with a pair, a set, or a hand with a gutshot or backdoors; most high cards fold.', range: 'Nines, sets, pairs like 8-8 and 7-7, wheel draws like A-5, A-3 and 5-3, 6-5.' },
-      { street: 'turn', text: 'The 3♦ makes straights for A-5 and 6-5 and adds a diamond draw. You bet 45 into 52.5 and they check-raise all in for 197.', range: 'Value: 4-4, 3-3, 2-2, sometimes 9-9, nines, A-5, 6-5. Draws: diamonds, pairs with a straight draw.' },
+      { street: 'turn', text: 'The 3♦ makes straights for A-5 and 6-5, adds a diamond draw, and gives you a wheel gutshot. You bet 45 into 52.5 and they check-raise all in for 197.', range: 'Value: 4-4, 3-3, 2-2, sometimes 9-9, nines, A-5, 6-5. Draws: diamonds, pairs with a straight draw.' },
     ],
     takeaway: 'Against a balanced player, a turn check-raise all in on a low board includes many draws: aces can call.',
   },
@@ -34,7 +34,7 @@ export const L19: Record<string, Lesson> = {
     why: 'Call: a weak open-limper bets whenever you check, so their value has to be narrow, a nine, trip deuces, sometimes a pocket pair or a seven, while every missed heart draw, king high, queen high and wheel draw bets too. Ace high beats all of those. The price is about 29%, and you’re ahead more often.',
     streets: [
       { street: 'preflop', text: 'A weak player new to the table limps; you complete A♥6♥ from the small blind and the big blind checks.', range: 'Very wide: suited hands, connectors, weak aces, kings and queens, small pairs.' },
-      { street: 'flop', text: 'On 2♥3♣9♥ you have a flush draw and a wheel draw. You bet 2.38 into 3.75, the big blind folds and the limper calls.', range: 'Nines, deuces, threes, pocket pairs, heart draws, wheel draws like 5-4, overcards.' },
+      { street: 'flop', text: 'On 2♥3♣9♥ you have the nut flush draw and a backdoor straight draw. You bet 2.38 into 3.75, the big blind folds and the limper calls.', range: 'Nines, deuces, threes, pocket pairs, heart draws, wheel draws like 5-4, overcards.' },
       { street: 'turn', text: 'The 2♠ pairs the board. You check and they bet 3.43 into 8.5. This player bets into a check with almost anything.', range: 'Nines, trip deuces, pocket pairs, heart and wheel draws, air.' },
       { street: 'river', text: 'The 7♦ misses every draw. You check and they bet 10.33 into 15.4. Betting into every check means a wide range, mostly misses.', range: 'Value: a nine or trip deuces, sometimes a pocket pair or a seven. Bluffs: missed hearts, king and queen high, wheel draws.' },
     ],
@@ -54,7 +54,7 @@ export const L19: Record<string, Lesson> = {
     why: 'Fold: a straightforward player bets big when strong and checks when not. They checked the turn, then bet 80% of the pot on a river that changed nothing, so they didn’t just make a hand: they were trapping with trips or a full house. A few missed club draws are the only bluffs, too few for a 31% price.',
     streets: [
       { street: 'preflop', text: 'A straightforward $2-$5 regular raises from middle position; you call K♣8♣ on the button and the big blind calls.', range: 'Pairs, A-K to A-T, suited broadways, suited aces, suited connectors.' },
-      { street: 'flop', text: 'On 9♣9♠7♣ they bet small, 6 into 18.5; you call with a backdoor draw and the big blind folds. A small bet is most of their range.', range: 'Nines, sevens, overpairs, club draws, high cards.' },
+      { street: 'flop', text: 'On 9♣9♠7♣ they bet small, 6 into 18.5; you call with a king-high flush draw and the big blind folds. A small bet is most of their range.', range: 'Nines, sevens, overpairs, club draws, high cards.' },
       { street: 'turn', text: 'The K♦ gives you top pair. They check and you check behind. This player checks when not strong, so it’s usually a pair, a draw or high cards.', range: 'Overpairs and pairs, club draws, A-K and high cards, a few trapping trips or full houses.' },
       { street: 'river', text: 'The 4♥ changes nothing, and they bet 24 into 30.5. A pair would check again; checking the turn and then betting big on a blank is how strong hands trap.', range: 'Value: trip nines, 7-7, K-K. Bluffs: a few missed club draws.' },
     ],

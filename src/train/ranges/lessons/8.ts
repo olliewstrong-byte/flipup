@@ -5,7 +5,7 @@ export const L8: Record<string, Lesson> = {
     why: 'Call: they shove full houses, but they also shove A-Q and their overpairs, and there are far more of those. The paired river looks scary, yet only Q-Q, 7-7, 5-5 and quad sixes beat you. You need about 35% and you’re ahead most of the time.',
     streets: [
       { street: 'preflop', text: 'You open 9♦8♥ from second position, the button 3-bets, and you call.', range: 'Big pairs, A-K, A-Q, suited broadways, some light 3-bets.' },
-      { street: 'flop', text: 'On Q♥7♠5♦ you check, they bet small, and you call with a gutshot and two overcards. A small c-bet here is most of their range.', range: 'Overpairs, A-Q and K-Q, sets, and big cards.' },
+      { street: 'flop', text: 'On Q♥7♠5♦ you check, they bet small, and you call with a gutshot (a six). A small c-bet here is most of their range.', range: 'Overpairs, A-Q and K-Q, sets, and big cards.' },
       { street: 'turn', text: 'The 6♠ gives you a straight. You check to let them keep betting; they bet ¾ pot and you call. Overpairs and top pairs keep going here, thinking they’re ahead.', range: 'K-K and A-A, A-Q, sets Q-Q, 7-7 and 5-5, some bluffs.' },
       { street: 'river', text: 'The 6♦ pairs the board and they shove about the pot. Sets just became full houses, but a 3-bettor also shoves A-Q and overpairs, reading you for one pair.', range: 'Ahead: Q-Q, 7-7, 5-5, quad sixes. Behind: A-Q, K-K and A-A.' },
     ],

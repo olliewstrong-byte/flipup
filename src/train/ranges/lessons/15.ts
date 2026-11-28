@@ -55,7 +55,7 @@ export const L15: Record<string, Lesson> = {
     why: 'Fold: their range now holds every flush plus trips and top pairs, and you have ace high with no heart. An ace or a king helps only against the queens, rarely against trips, never against flushes. You need 24%, and out of position with 40 big blinds, calling and hoping gets expensive fast.',
     streets: [
       { street: 'preflop', text: 'The lojack opens and you call from the small blind with A♠K♣, 40 big blinds deep; the big blind folds.', range: 'Pairs, broadways, suited aces, suited connectors.' },
-      { street: 'flop', text: 'On Q♥8♥8♣ you check and call 3 into 7 with two overcards and a backdoor. One small bet is fine, but this board hits the opener many ways.', range: 'Queens, eights, heart draws, straight draws, big cards, some air.' },
+      { street: 'flop', text: 'On Q♥8♥8♣ you check and call 3 into 7 with two overcards and a backdoor straight draw. One small bet is fine, but this board hits the opener many ways.', range: 'Queens, eights, heart draws, straight draws, big cards, some air.' },
       { street: 'turn', text: 'The 6♥ completes the flush and they bet 6 into 13. A second bet on the flush card is a strong made hand or a draw; most air gives up here.', range: 'Flushes, A-8, 9-8, 8-7, Q-Q, 6-6, A-Q, K-Q, Q-J, J-T, T-9, K-J without a heart.' },
     ],
     takeaway: 'When the turn completes a draw and you hold only overcards with no draw, fold to a second bet.',

@@ -6,7 +6,7 @@ export const L16: Record<string, Lesson> = {
     streets: [
       { street: 'preflop', text: 'In a small live game you open K♦4♦ from the hijack; the button and an aggressive big blind call. Getting a good price against two players, the big blind defends very wide.', range: 'Very wide: pairs, any ace, suited kings and queens, broadways, connectors.' },
       { street: 'flop', text: 'J♠2♦2♥ checks round three ways. A dry paired board misses most hands, and the big blind would often check a jack or a deuce too, so nothing is ruled out.', range: 'Jacks and deuces checking, pairs, ace high, hands that missed.' },
-      { street: 'turn', text: 'The 9♥ adds draws. The big blind leads 11 into 18.5, you call with king high and a backdoor flush draw, and the button folds. This player bets value and draws alike when it checks to them.', range: 'Jacks, nines and deuces; underpairs and ace high as thin value; Q-T, T-8 and heart draws.' },
+      { street: 'turn', text: 'The 9♥ adds draws. The big blind leads 11 into 18.5, you call with king high, and the button folds. This player bets value and draws alike when it checks to them.', range: 'Jacks, nines and deuces; underpairs and ace high as thin value; Q-T, T-8 and heart draws.' },
       { street: 'river', text: 'The 3♦ misses every draw, yours too, and they bet 30 into 40. Every pair beats you, and this player bets even weak pairs for value.', range: 'Value: a jack, nine or deuce, often an underpair or ace high. Bluffs: missed Q-T, T-8, heart draws.' },
     ],
     takeaway: 'A bluff catcher has to beat their value-bets too: against a player who bets thin, king high catches too little.',
@@ -45,7 +45,7 @@ export const L16: Record<string, Lesson> = {
     why: 'Fold: three growing bets ending in 140% of the pot is a very strong line, and with a bet this size an elite player is more likely being greedy with the top of their range than building a huge bluff. Their bluffs are missed spade draws, and your K♠8♠ removes some of them. A 37% price needs more bluffs than that.',
     streets: [
       { street: 'preflop', text: 'An elite player opens the lojack and you defend K♠8♠ from the big blind, both over 300 big blinds deep. Deep stacks give them room for big bets later.', range: 'Pairs, broadways, suited aces, suited kings, suited connectors.' },
-      { street: 'flop', text: 'On a very connected 9♠7♠6♣ you check and call ⅔ pot with a flush draw and a gutshot. A big c-bet here leans to value and strong draws.', range: 'Sets, two pair, T-8, overpairs, top pairs, spade and straight draws.' },
+      { street: 'flop', text: 'On a very connected 9♠7♠6♣ you check and call ⅔ pot with a flush draw and an open-ended straight draw (a ten or a five). A big c-bet here leans to value and strong draws.', range: 'Sets, two pair, T-8, overpairs, top pairs, spade and straight draws.' },
       { street: 'turn', text: 'The K♥ gives you top pair. You check and call an overbet, 18.33 into 16: a set, a straight or two pair building the pot, or a draw betting big.', range: 'Sets 9-9, 7-7, 6-6, K-K; T-8; K-9, 7-6; top pairs with a better kicker; spade draws.' },
       { street: 'river', text: 'The 3♥ misses your draws. You check and they bet 75 into 53, the third bet in a row, each bigger than the last.', range: 'Value: 9-9, 7-7, 6-6, K-K, T-8, K-9, 7-6, some better top pairs. Bluffs: missed spade draws.' },
     ],
@@ -64,9 +64,9 @@ export const L16: Record<string, Lesson> = {
     why: 'Bet big: their range is full of strong hands that can’t fold. Two pair and sets call any size, A-A and A♣K♣ call a normal bet, and the same straight splits whatever you bet. Only A-T beats you, and a strong player wouldn’t have called the pot-size turn bet with it. ¾ pot is also fine and keeps A-Q and A-J calling.',
     streets: [
       { street: 'preflop', text: 'A strong player opens under the gun and you call K♦T♦ on the button. Suited king-ten makes straights and flushes on the broadway boards their range likes.', range: 'Pairs, A-K to A-T, suited broadways like K-Q, K-J and Q-J.' },
-      { street: 'flop', text: 'On Q♣J♦9♦ they check, you bet 4 into 7 with an open-ender and a flush draw, and they call. This board hits their range hard.', range: 'Queens, jacks, two pairs, sets, K-T and T-8, A-T, diamond draws.' },
-      { street: 'turn', text: 'The 7♣. They check and call a pot-size bet, which narrows them a lot: a strong player doesn’t pay a pot-size bet with a weak draw like A-T.', range: 'K-Q, K-J, Q-Q, J-J, 9-9, A-A, A♣K♣, Q-T, J-T, T-9, K-T, A-Q, A-J.' },
-      { street: 'river', text: 'The K♠ gives you a king-high straight and they check. Sort their range by what it pays.', range: 'Any size: K-Q, K-J, Q-Q, J-J, 9-9. Normal bet: A-A, A♣K♣. Split: Q-T, J-T, T-9, K-T. Small only: A-Q, A-J.' },
+      { street: 'flop', text: 'You flop the nut straight, K-Q-J-T-9, with a flush draw too. They check, you bet 4 into 7, and they call. This board hits their range hard.', range: 'Queens, jacks, two pairs, sets, K-T and T-8, A-T, diamond draws.' },
+      { street: 'turn', text: 'The 7♣. They check and call a pot-size bet, which narrows them a lot: a strong player doesn’t pay a pot-size bet with just a straight draw like A-T.', range: 'K-Q, K-J, Q-Q, J-J, 9-9, A-A, A♣K♣, Q-T, J-T, T-9, K-T, A-Q, A-J.' },
+      { street: 'river', text: 'The K♠ pairs your king; you still have the king-high straight, and now only A-T beats it. They check. Sort their range by what it pays.', range: 'Any size: K-Q, K-J, Q-Q, J-J, 9-9. Normal bet: A-A, A♣K♣. Split: Q-T, J-T, T-9, K-T. Small only: A-Q, A-J.' },
     ],
     takeaway: 'When their range is full of strong hands that can’t fold, bet big with the nuts: the hands that call any size pay you the most.',
   },

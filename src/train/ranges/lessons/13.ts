@@ -37,7 +37,7 @@ export const L13: Record<string, Lesson> = {
       { street: 'preflop', text: 'You open 7♦6♦ on the button and a typical live player defends the big blind. They’d 3-bet many of their best hands.', range: 'Wide and capped: suited hands, connectors, pairs and broadways.' },
       { street: 'flop', text: 'On J♠9♠2♣ you c-bet and they call. They’d raise most sets and two pair on a board this wet, so the call is jacks and draws.', range: 'Jacks, spade draws, straight draws like T-8, Q-T and K-Q.' },
       { street: 'turn', text: 'The 4♦. They won’t fold jacks or draws to any size, so you bet nearly twice the pot, and they call.', range: 'Jacks, spade draws, straight draws, the odd set.' },
-      { street: 'river', text: 'The 3♣ misses everything, your draw included, and they check. They almost never have better than A-J.', range: 'Normal bet, not an overbet: A-J, K-J, Q-J, J-T, J-8. Fold: missed draws. Call: the odd 4-4 or 6♠5♠.' },
+      { street: 'river', text: 'The 3♣ misses everything and they check; you’re left with seven high. They almost never have better than A-J.', range: 'Normal bet, not an overbet: A-J, K-J, Q-J, J-T, J-8. Fold: missed draws. Call: the odd 4-4 or 6♠5♠.' },
     ],
     takeaway: 'Against a capped range, size your bluff where their best hand folds.',
   },

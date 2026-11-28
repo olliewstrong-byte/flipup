@@ -55,7 +55,7 @@ export const L1: Record<string, Lesson> = {
     why: 'Fold: you don’t even beat their bluffs. A-K, their main bluff, outkicks you, and A-5 has a pair; the only bet you beat is a rare K-Q. The 30% price doesn’t matter when you lose to almost everything that bets.',
     streets: [
       { street: 'preflop', text: 'You open A♦Q♣ from the hijack, the small blind 3-bets to 13.5 and you call. Out of position against a hijack open, a small blind 3-bets strong and fairly linear, with a few suited aces as its light hands.', range: 'Big pairs, A-K and A-Q, and suited aces like A-5 and A-4.' },
-      { street: 'flop', text: 'J♦3♠2♥ favours the 3-bettor, who has all the overpairs. They bet 10 into 28, their whole range. You call: you’re ahead of A-K and have overcards and a wheel gutshot.', range: 'Overpairs, A-J, A-K and A-Q, and A-5 and A-4 with a gutshot.' },
+      { street: 'flop', text: 'J♦3♠2♥ favours the 3-bettor, who has all the overpairs. They bet 10 into 28, their whole range. You call: you’re ahead of A-K, with two overcards and a backdoor wheel draw.', range: 'Overpairs, A-J, A-K and A-Q, and A-5 and A-4 with a gutshot.' },
       { street: 'turn', text: 'The 5♦ makes A-4 a wheel and gives A-5 a pair. They bet again, 22 into 48. Overpairs bet for value and A-K keeps firing with a gutshot, so ace high can still call.', range: 'Overpairs and sets, A-J and K-J, A-4 and A-5, and A-K barrelling.' },
       { street: 'river', text: 'The 3♦ pairs the board and changes nothing for you. They shove 67 into 92. The trouble is who bluffs: A-K, which beats your A-Q.', range: 'Value: overpairs and sets, A-J and K-J, A-4 and A-5. Bluffs: A-K, which beats you, and sometimes K-Q.' },
     ],
